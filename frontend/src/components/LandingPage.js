@@ -23,7 +23,7 @@ const LandingPage = () => {
           return;
         }
 
-        const response = await axios.get("http://localhost:8000/api/getdata", {
+        const response = await axios.get("https://e-com-5sgi.onrender.com/api/getdata", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

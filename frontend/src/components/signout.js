@@ -7,7 +7,7 @@ const Signout = () => {
 
   const handleSignout = async () => {
     try {
-      await axios.post("http://localhost:8000/api/signout", {}, {
+      await axios.post("https://e-com-5sgi.onrender.com/api/signout", {}, {
         headers: {
           "Content-Type": "application/json",
         },

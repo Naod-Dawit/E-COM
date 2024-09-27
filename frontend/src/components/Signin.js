@@ -18,7 +18,7 @@ const Signin = () => {
   const handleSignin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/signin', { email: data.email, password: data.password });
+      const response = await axios.post('https://e-com-5sgi.onrender.com/api/signin', { email: data.email, password: data.password });
       localStorage.setItem('token', response.data.token); 
       alert("Signin successful!");
       navigate("/");

@@ -11,7 +11,7 @@ const Resetpassword = () => {
 
   const handleEmailSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:8000/api/reset-password', {
+    const response = await fetch('https://e-com-5sgi.onrender.com/api/reset-password', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -29,7 +29,7 @@ const Resetpassword = () => {
 
   const handleTokenSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:8000/api/verify-reset-token', {
+    const response = await fetch('https://e-com-5sgi.onrender.com/api/verify-reset-token', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -51,7 +51,7 @@ const Resetpassword = () => {
       alert("Passwords do not match!");
       return;
     }
-    const response = await fetch('http://localhost:8000/api/reset-password-final', {
+    const response = await fetch('https://e-com-5sgi.onrender.com/api/reset-password-final', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

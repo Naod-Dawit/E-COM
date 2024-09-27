@@ -14,7 +14,7 @@ const ShowDescription = () => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/products/${id}`
+          `https://e-com-5sgi.onrender.com/api/products/${id}`
         );
         setProduct(response.data);
       } catch (err) {

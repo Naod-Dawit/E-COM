@@ -19,7 +19,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/api/signup", {
+      const response = await fetch("https://e-com-5sgi.onrender.com/api/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -8,7 +8,7 @@ const VerifyToken = () => {
   const handleVerify = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/api/verify-token", {
+      const response = await fetch("https://e-com-5sgi.onrender.com/api/verify-token", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

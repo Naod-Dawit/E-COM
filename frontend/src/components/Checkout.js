@@ -35,7 +35,7 @@ const Checkout = () => {
       }));
       console.log(items);
       const response = await fetch(
-        "http://localhost:8000/api/create-payment-intent",
+        "https://e-com-5sgi.onrender.com/api/create-payment-intent",
         {
           method: "POST",
           headers: {
